@@ -1,0 +1,43 @@
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/veNeumannComputer.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/veNeumannComputer.syr" 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/veNeumannComputer.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/veNeumannComputer.syr" 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/veNeumannComputer.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/veNeumannComputer.syr" 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/veNeumannComputer.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/veNeumannComputer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 "veNeumannComputer.ngc" veNeumannComputer.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o veNeumannComputer_map.ncd veNeumannComputer.ngd veNeumannComputer.pcf 
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o veNeumannComputer_map.ncd veNeumannComputer.ngd veNeumannComputer.pcf 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/veNeumannComputer.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/veNeumannComputer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 "veNeumannComputer.ngc" veNeumannComputer.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o veNeumannComputer_map.ncd veNeumannComputer.ngd veNeumannComputer.pcf 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/veNeumannComputer.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/veNeumannComputer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 "veNeumannComputer.ngc" veNeumannComputer.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o veNeumannComputer_map.ncd veNeumannComputer.ngd veNeumannComputer.pcf 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/veNeumannComputer.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/veNeumannComputer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 "veNeumannComputer.ngc" veNeumannComputer.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o veNeumannComputer_map.ncd veNeumannComputer.ngd veNeumannComputer.pcf 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/veNeumannComputer.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/veNeumannComputer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 "veNeumannComputer.ngc" veNeumannComputer.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o veNeumannComputer_map.ncd veNeumannComputer.ngd veNeumannComputer.pcf 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/veNeumannComputer.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/veNeumannComputer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-4 "veNeumannComputer.ngc" veNeumannComputer.ngd  
+map -intstyle ise -p xc3s400-pq208-4 -cm area -ir off -pr off -c 100 -o veNeumannComputer_map.ncd veNeumannComputer.ngd veNeumannComputer.pcf 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/veNeumannComputer.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/veNeumannComputer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s5000-fg900-4 "veNeumannComputer.ngc" veNeumannComputer.ngd  
+map -intstyle ise -p xc3s5000-fg900-4 -cm area -ir off -pr off -c 100 -o veNeumannComputer_map.ncd veNeumannComputer.ngd veNeumannComputer.pcf 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/veNeumannComputer.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/veNeumannComputer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s5000-fg900-4 "veNeumannComputer.ngc" veNeumannComputer.ngd  
+map -intstyle ise -p xc3s5000-fg900-4 -cm area -ir off -pr off -c 100 -o veNeumannComputer_map.ncd veNeumannComputer.ngd veNeumannComputer.pcf 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/veNeumannComputer.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/veNeumannComputer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 "veNeumannComputer.ngc" veNeumannComputer.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o veNeumannComputer_map.ncd veNeumannComputer.ngd veNeumannComputer.pcf 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/veNeumannComputer.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/veNeumannComputer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6vcx75t-ff484-2 "veNeumannComputer.ngc" veNeumannComputer.ngd  
+map -intstyle ise -p xc6vcx75t-ff484-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o veNeumannComputer_map.ncd veNeumannComputer.ngd veNeumannComputer.pcf 
+vhdtdtfi -lib work utilities1.vhd -lib work PC.vhd -lib work IR.vhd -lib work ALU.vhd -lib work AC.vhd -lib work datapath.vhd -lib work controller.vhd -lib work Instruction_Memory.vhd -lib work addingCPU.vhd -lib work veNeumannComputer.vhd -prj basic_CPU -o veNeumannComputer.spl -module veNeumannComputer -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 veNeumannComputer.spl {E:/Academic/VHDL projects/basic_CPU/veNeumannComputer.sym} 
+vhdtdtfi -prj basic_CPU -o "E:/Academic/VHDL projects/basic_CPU/veNeumannComputer.vhi" -module veNeumannComputer -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work utilities1.vhd -lib work PC.vhd -lib work IR.vhd -lib work ALU.vhd -lib work AC.vhd -lib work datapath.vhd -lib work controller.vhd -lib work Instruction_Memory.vhd -lib work addingCPU.vhd -lib work veNeumannComputer.vhd 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/veNeumannComputer.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/veNeumannComputer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-5 "veNeumannComputer.ngc" veNeumannComputer.ngd  
+map -intstyle ise -p xc3s50-pq208-5 -cm area -ir off -pr off -c 100 -o veNeumannComputer_map.ncd veNeumannComputer.ngd veNeumannComputer.pcf 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/veNeumannComputer.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/veNeumannComputer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-5 "veNeumannComputer.ngc" veNeumannComputer.ngd  
+map -intstyle ise -p xc3s50-pq208-5 -cm area -ir off -pr off -c 100 -o veNeumannComputer_map.ncd veNeumannComputer.ngd veNeumannComputer.pcf 

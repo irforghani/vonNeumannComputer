@@ -1,0 +1,80 @@
+V3 40
+FL "E:/Academic/VHDL projects/basic_CPU/AC.vhd" 2018/01/05.10:29:56 P.20131013
+EN work/AC 1516792537 FL "E:/Academic/VHDL projects/basic_CPU/AC.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/AC/Procedural 1516792538 \
+      FL "E:/Academic/VHDL projects/basic_CPU/AC.vhd" EN work/AC 1516792537
+FL "E:/Academic/VHDL projects/basic_CPU/addingCPU.vhd" 2018/01/24.12:06:41 P.20131013
+EN work/addingCPU 1516792545 \
+      FL "E:/Academic/VHDL projects/basic_CPU/addingCPU.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/addingCPU/Structural 1516792546 \
+      FL "E:/Academic/VHDL projects/basic_CPU/addingCPU.vhd" EN work/addingCPU 1516792545 \
+      CP work/controller CP work/datapath
+FL "E:/Academic/VHDL projects/basic_CPU/ALU.vhd" 2018/01/05.10:49:02 P.20131013
+EN work/ALU 1516792539 FL "E:/Academic/VHDL projects/basic_CPU/ALU.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB work/utilities1 1516792532
+AR work/ALU/Functional 1516792540 \
+      FL "E:/Academic/VHDL projects/basic_CPU/ALU.vhd" EN work/ALU 1516792539
+FL "E:/Academic/VHDL projects/basic_CPU/controller.vhd" 2018/01/05.12:15:52 P.20131013
+EN work/controller 1516792541 \
+      FL "E:/Academic/VHDL projects/basic_CPU/controller.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB work/utilities1 1516792532
+AR work/controller/Procedural 1516792542 \
+      FL "E:/Academic/VHDL projects/basic_CPU/controller.vhd" EN work/controller 1516792541
+FL "E:/Academic/VHDL projects/basic_CPU/datapath.vhd" 2018/01/24.12:11:48 P.20131013
+EN work/datapath 1516792543 FL "E:/Academic/VHDL projects/basic_CPU/datapath.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/datapath/structural 1516792544 \
+      FL "E:/Academic/VHDL projects/basic_CPU/datapath.vhd" EN work/datapath 1516792543 \
+      AR work/IR/Procedural 1516792534 AR work/PC/Procedural 1516792536 \
+      AR work/AC/Procedural 1516792538 AR work/ALU/Functional 1516792540
+FL "E:/Academic/VHDL projects/basic_CPU/Instruction_Memory.vhd" 2018/01/24.14:40:45 P.20131013
+EN work/Instruction_Memory 1516792302 \
+      FL "E:/Academic/VHDL projects/basic_CPU/Instruction_Memory.vhd" \
+      PB std/TEXTIO 1381692176 PB ieee/STD_LOGIC_TEXTIO 1381692180 \
+      PB ieee/std_logic_1164 1381692176 PB work/utilities1 1516792532
+AR work/Instruction_Memory/Behavioral 1516792303 \
+      FL "E:/Academic/VHDL projects/basic_CPU/Instruction_Memory.vhd" \
+      EN work/Instruction_Memory 1516792302
+FL "E:/Academic/VHDL projects/basic_CPU/IR.vhd" 2018/01/05.10:15:26 P.20131013
+EN work/IR 1516792533 FL "E:/Academic/VHDL projects/basic_CPU/IR.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/IR/Procedural 1516792534 \
+      FL "E:/Academic/VHDL projects/basic_CPU/IR.vhd" EN work/IR 1516792533
+FL "E:/Academic/VHDL projects/basic_CPU/PC.vhd" 2018/01/05.10:21:58 P.20131013
+EN work/PC 1516792535 FL "E:/Academic/VHDL projects/basic_CPU/PC.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB work/utilities1 1516792532
+AR work/PC/Procedural 1516792536 \
+      FL "E:/Academic/VHDL projects/basic_CPU/PC.vhd" EN work/PC 1516792535
+FL "E:/Academic/VHDL projects/basic_CPU/std_logic_ram.vhd" 2018/01/22.19:47:46 P.20131013
+EN work/std_logic_ram 1516637870 \
+      FL "E:/Academic/VHDL projects/basic_CPU/std_logic_ram.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/std_logic_ram/Behavioral 1516637871 \
+      FL "E:/Academic/VHDL projects/basic_CPU/std_logic_ram.vhd" \
+      EN work/std_logic_ram 1516637870
+FL "E:/Academic/VHDL projects/basic_CPU/utilities1.vhd" 2018/01/05.06:42:25 P.20131013
+PH work/utilities1 1516792531 \
+      FL "E:/Academic/VHDL projects/basic_CPU/utilities1.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_TEXTIO 1381692180
+PB work/utilities1 1516792532 \
+      FL "E:/Academic/VHDL projects/basic_CPU/utilities1.vhd" PH work/utilities1 1516792531
+FL "E:/Academic/VHDL projects/basic_CPU/veNeumannComputer.vhd" 2018/01/24.11:57:49 P.20131013
+EN work/veNeumannComputer 1516792304 \
+      FL "E:/Academic/VHDL projects/basic_CPU/veNeumannComputer.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/veNeumannComputer/Behavioral 1516792305 \
+      FL "E:/Academic/VHDL projects/basic_CPU/veNeumannComputer.vhd" \
+      EN work/veNeumannComputer 1516792304 CP work/addingCPU \
+      CP work/Instruction_Memory
+FL "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.vhd" 2018/01/24.09:44:26 P.20131013
+EN work/vonNeumannComputer 1516774487 \
+      FL "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.vhd" \
+      PB std/TEXTIO 1381692176 PB ieee/STD_LOGIC_TEXTIO 1381692180 \
+      PB ieee/std_logic_1164 1381692176 PB work/utilities1 1516792532
+AR work/vonNeumannComputer/Behavioral 1516774488 \
+      FL "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.vhd" \
+      EN work/vonNeumannComputer 1516774487 CP work/addingCPU \
+      CP work/Instruction_Memory

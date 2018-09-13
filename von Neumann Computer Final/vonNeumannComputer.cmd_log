@@ -1,0 +1,46 @@
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.syr" 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.syr" 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.syr" 
+vhdtdtfi -lib work utilities1.vhd -lib work PC.vhd -lib work IR.vhd -lib work ALU.vhd -lib work AC.vhd -lib work datapath.vhd -lib work controller.vhd -lib work Instruction_Memory.vhd -lib work addingCPU.vhd -lib work vonNeumannComputer.vhd -prj basic_CPU -o vonNeumannComputer.spl -module vonNeumannComputer -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 vonNeumannComputer.spl {E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.sym} 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.syr" 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 "vonNeumannComputer.ngc" vonNeumannComputer.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o vonNeumannComputer_map.ncd vonNeumannComputer.ngd vonNeumannComputer.pcf 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.syr" 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 "vonNeumannComputer.ngc" vonNeumannComputer.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o vonNeumannComputer_map.ncd vonNeumannComputer.ngd vonNeumannComputer.pcf 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.syr" 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.syr" 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 "vonNeumannComputer.ngc" vonNeumannComputer.ngd  
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/VNC.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/VNC.syr" 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.syr" 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 "vonNeumannComputer.ngc" vonNeumannComputer.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o vonNeumannComputer_map.ncd vonNeumannComputer.ngd vonNeumannComputer.pcf 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.syr" 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.syr" 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.syr" 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.syr" 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.syr" 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.syr" 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.syr" 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.syr" 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.syr" 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 "vonNeumannComputer.ngc" vonNeumannComputer.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o vonNeumannComputer_map.ncd vonNeumannComputer.ngd vonNeumannComputer.pcf 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.syr" 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.syr" 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.syr" 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.syr" 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.syr" 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.syr" 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.syr" 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 "vonNeumannComputer.ngc" vonNeumannComputer.ngd  
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 "vonNeumannComputer.ngc" vonNeumannComputer.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o vonNeumannComputer_map.ncd vonNeumannComputer.ngd vonNeumannComputer.pcf 

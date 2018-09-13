@@ -1,0 +1,333 @@
+--------------------------------------------------------------------
+|                      Xilinx XPower Analyzer                      |
+--------------------------------------------------------------------
+| Release                | 14.7 - P.20131013 (nt)                  |
+| Command Line           | Generated from Graphical User Interface |
+--------------------------------------------------------------------
+
+--------------------------------
+|      Table of Contents       |
+--------------------------------
+| 1.  Settings                 |
+| 1.1.  Project                |
+| 1.2.  Device                 |
+| 1.3.  Environment            |
+| 1.4.  Default Activity Rates |
+| 2.  Summary                  |
+| 2.1.  On-Chip Power Summary  |
+| 2.2.  Thermal Summary        |
+| 2.3.  Power Supply Summary   |
+| 2.4.  Confidence Level       |
+| 3.  Detailed Reports         |
+| 3.1.  By Hierarchy           |
+| 3.2.  By Clock Domain        |
+| 3.3.  By Resource Type       |
+| 3.3.1.  Core Dynamic         |
+| 3.3.1.1.  Logic              |
+| 3.3.1.2.  Signals            |
+| 3.3.2.  IO                   |
+| 4.  Warnings                 |
+--------------------------------
+
+1.  Settings
+1.1.  Project
+---------------------------------------------
+|                  Project                  |
+---------------------------------------------
+| Design File               | addingCPU.ncd |
+| Settings File             | NA            |
+| Physical Constraints File | addingCPU.pcf |
+| Simulation Activity File  | NA            |
+| Design Nets Matched       | NA            |
+| Simulation Nets Matched   | NA            |
+---------------------------------------------
+
+1.2.  Device
+-----------------------------------------------
+|                   Device                    |
+-----------------------------------------------
+| Family           | Spartan3                 |
+| Part             | xc3s50                   |
+| Package          | pq208                    |
+| Temp Grade       | Commercial               |
+| Process          | Typical                  |
+| Speed Grade      | -4                       |
+| Characterization | PRODUCTION,v1.2,06-25-09 |
+-----------------------------------------------
+
+1.3.  Environment
+---------------------------
+|       Environment       |
+---------------------------
+| Ambient Temp (C) | 25.0 |
+| Use custom TJA?  | No   |
+| Custom TJA (C/W) | NA   |
+| Airflow (LFM)    | 0    |
+---------------------------
+
+1.4.  Default Activity Rates
+----------------------------------
+|     Default Activity Rates     |
+----------------------------------
+| FF Toggle Rate (%)     | 12.5  |
+| I/O Toggle Rate (%)    | 12.5  |
+| Output Load (pF)       | 5.0   |
+| I/O Enable Rate (%)    | 100.0 |
+| BRAM Write Rate (%)    | 50.0  |
+| BRAM Enable Rate (%)   | 50.0  |
+----------------------------------
+
+2.  Summary
+2.1.  On-Chip Power Summary
+-----------------------------------------------------------------------------
+|                           On-Chip Power Summary                           |
+-----------------------------------------------------------------------------
+|        On-Chip        | Power (mW) |  Used  | Available | Utilization (%) |
+-----------------------------------------------------------------------------
+| Clocks                |       0.00 |      1 |    ---    |       ---       |
+| Logic                 |       0.00 |     20 |      1536 |               1 |
+| Signals               |       0.00 |     55 |    ---    |       ---       |
+| IOs                   |       0.00 |     18 |       124 |              15 |
+| Static Power          |      27.34 |        |           |                 |
+| Total                 |      27.34 |        |           |                 |
+-----------------------------------------------------------------------------
+
+2.2.  Thermal Summary
+------------------------------
+|      Thermal Summary       |
+------------------------------
+| Effective TJA (C/W) | 37.0 |
+| Max Ambient (C)     | 84.0 |
+| Junction Temp (C)   | 26.0 |
+------------------------------
+
+2.3.  Power Supply Summary
+---------------------------------------------------------
+|                 Power Supply Summary                  |
+---------------------------------------------------------
+|                      | Total | Dynamic | Static Power |
+---------------------------------------------------------
+| Supply Power (mW)    | 27.34 | 0.00    | 27.34        |
+---------------------------------------------------------
+
+---------------------------------------------------------------------------------------------------------------
+|                                            Power Supply Currents                                            |
+---------------------------------------------------------------------------------------------------------------
+|     Supply Source     | Supply Voltage | Total Current (mA) | Dynamic Current (mA) | Quiescent Current (mA) |
+---------------------------------------------------------------------------------------------------------------
+| Vccint                |          1.200 |               5.08 |                 0.00 |                   5.08 |
+| Vccaux                |          2.500 |               7.00 |                 0.00 |                   7.00 |
+| Vcco25                |          2.500 |               1.50 |                 0.00 |                   1.50 |
+---------------------------------------------------------------------------------------------------------------
+
+2.4.  Confidence Level
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|                                                                                                    Confidence Level                                                                                                    |
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|       User Input Data       | Confidence |                        Details                         |                                                       Action                                                       |
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Design implementation state | High       | Design is completely routed                            |                                                                                                                    |
+| Clock nodes activity        | Low        | User specified less than 75% of clocks                 | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
+| Device models               | High       | Device models are Production                           |                                                                                                                    |
+|                             |            |                                                        |                                                                                                                    |
+| Overall confidence level    | Low        |                                                        |                                                                                                                    |
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3.  Details
+3.1.  By Hierarchy
+-----------------------------------------------------------------------------------------
+|  By Hierarchy   | Power (mW) | Logic Power (mW) | Signal Power (mW) |     # LUTs      |
+-----------------------------------------------------------------------------------------
+| Hierarchy total |   0.00     |   0.00           |   0.00            |     20          |
+|   addingCPU     |   0.00     |   0.00           |   0.00            |      7 /     20 |
+|     CU          |   0.00     |   0.00           |   0.00            |      4          |
+|     DP          |   0.00     |   0.00           |   0.00            |      9          |
+|       AC        |   0.00     |   0.00           |   0.00            |      0          |
+|       IR        |   0.00     |   0.00           |   0.00            |      0          |
+|       PC        |   0.00     |   0.00           |   0.00            |      0          |
+-----------------------------------------------------------------------------------------
+
+3.2.  By Clock Domain
+----------------------------------------------------------------------------------------------------------------------------------------
+|   By Clock Domain : 1    | Power (mW) | Freq (MHz) |       Buffer        | Buffer Enable (%) | Enable Signal | Fanout | Slice Fanout |
+----------------------------------------------------------------------------------------------------------------------------------------
+| clk_BUFGP/IBUFG          |            |            |                     |                   |               |        |              |
+|  Logic:                  |            |            |                     |                   |               |        |              |
+|   clk_BUFGP/BUFG         |       0.00 |       0.00 | BUFGMUX_GCLK_BUFFER |                NA | NA            |     NA |           NA |
+|   clk_BUFGP/BUFG.GCLKMUX |       0.00 |       0.00 | BUFGMUX_GCLKMUX     |                NA | NA            |     NA |           NA |
+|  Nets:                   |            |            |                     |                   |               |        |              |
+|   clk_BUFGP              |       0.00 |       0.00 | NA                  |                NA | NA            |     26 |           15 |
+|   clk_BUFGP/IBUFG        |       0.00 |       0.00 | NA                  |                NA | NA            |      1 |            1 |
+|                          |            |            |                     |                   |               |        |              |
+| Total                    |       0.00 |            |                     |                   |               |        |              |
+----------------------------------------------------------------------------------------------------------------------------------------
+
+3.3.  By Resource Type
+3.3.1.  Core Dynamic
+3.3.1.1.  Logic
+---------------------------------------------------------------------------------------------------------
+|              Logic               | Power (mW) |     Type     | Clock (MHz) | Clock Name | Signal Rate |
+---------------------------------------------------------------------------------------------------------
+| CU/alu_on_dbus1                  |       0.00 | G (SLICEL)   |       Async | Async      |         0.0 |
+| CU/ir_on_adr1                    |       0.00 | G (SLICEL)   |       Async | Async      |         0.0 |
+| CU/present_state_FSM_FFd1        |       0.00 | FFY (SLICEL) |         0.0 | clk_BUFGP  |         0.0 |
+| CU/present_state_FSM_FFd2        |       0.00 | FFX (SLICEL) |         0.0 | clk_BUFGP  |         0.0 |
+| CU/present_state_FSM_FFd3        |       0.00 | FFX (SLICEL) |         0.0 | clk_BUFGP  |         0.0 |
+| CU/present_state_FSM_FFd4        |       0.00 | FFY (SLICEL) |         0.0 | clk_BUFGP  |         0.0 |
+| CU/rd_mem1                       |       0.00 | G (SLICEL)   |       Async | Async      |         0.0 |
+| CU/wr_mem1                       |       0.00 | G (SLICEL)   |       Async | Async      |         0.0 |
+| DP/AC/data_out_0                 |       0.00 | FFY (SLICEL) |         0.0 | clk_BUFGP  |         0.0 |
+| DP/AC/data_out_1                 |       0.00 | FFX (SLICEL) |         0.0 | clk_BUFGP  |         0.0 |
+| DP/AC/data_out_2                 |       0.00 | FFY (SLICEL) |         0.0 | clk_BUFGP  |         0.0 |
+| DP/AC/data_out_3                 |       0.00 | FFX (SLICEL) |         0.0 | clk_BUFGP  |         0.0 |
+| DP/AC/data_out_4                 |       0.00 | FFY (SLICEL) |         0.0 | clk_BUFGP  |         0.0 |
+| DP/AC/data_out_5                 |       0.00 | FFX (SLICEL) |         0.0 | clk_BUFGP  |         0.0 |
+| DP/AC/data_out_6                 |       0.00 | FFY (SLICEL) |         0.0 | clk_BUFGP  |         0.0 |
+| DP/AC/data_out_7                 |       0.00 | FFX (SLICEL) |         0.0 | clk_BUFGP  |         0.0 |
+| DP/IR/data_out_0                 |       0.00 | FFY (SLICEL) |         0.0 | clk_BUFGP  |         0.0 |
+| DP/IR/data_out_1                 |       0.00 | FFX (SLICEL) |         0.0 | clk_BUFGP  |         0.0 |
+| DP/IR/data_out_2                 |       0.00 | FFY (SLICEL) |         0.0 | clk_BUFGP  |         0.0 |
+| DP/IR/data_out_3                 |       0.00 | FFX (SLICEL) |         0.0 | clk_BUFGP  |         0.0 |
+| DP/IR/data_out_4                 |       0.00 | FFY (SLICEL) |         0.0 | clk_BUFGP  |         0.0 |
+| DP/IR/data_out_5                 |       0.00 | FFX (SLICEL) |         0.0 | clk_BUFGP  |         0.0 |
+| DP/IR/data_out_6                 |       0.00 | FFX (SLICEL) |         0.0 | clk_BUFGP  |         0.0 |
+| DP/IR/data_out_7                 |       0.00 | FFX (SLICEL) |         0.0 | clk_BUFGP  |         0.0 |
+| DP/PC/pc_0                       |       0.00 | FFY (SLICEL) |         0.0 | clk_BUFGP  |         0.0 |
+| DP/PC/pc_1                       |       0.00 | FFX (SLICEL) |         0.0 | clk_BUFGP  |         0.0 |
+| DP/PC/pc_2                       |       0.00 | FFY (SLICEL) |         0.0 | clk_BUFGP  |         0.0 |
+| DP/PC/pc_3                       |       0.00 | FFX (SLICEL) |         0.0 | clk_BUFGP  |         0.0 |
+| DP/PC/pc_4                       |       0.00 | FFY (SLICEL) |         0.0 | clk_BUFGP  |         0.0 |
+| DP/PC/pc_5                       |       0.00 | FFX (SLICEL) |         0.0 | clk_BUFGP  |         0.0 |
+| DP/dbus<0>LogicTrst1             |       0.00 | G (SLICEL)   |       Async | Async      |         0.0 |
+| DP/dbus<1>LogicTrst1             |       0.00 | F (SLICEL)   |       Async | Async      |         0.0 |
+| DP/dbus<2>LogicTrst1             |       0.00 | G (SLICEL)   |       Async | Async      |         0.0 |
+| DP/dbus<3>LogicTrst1             |       0.00 | F (SLICEL)   |       Async | Async      |         0.0 |
+| DP/dbus<4>LogicTrst1             |       0.00 | G (SLICEL)   |       Async | Async      |         0.0 |
+| DP/dbus<5>LogicTrst1             |       0.00 | F (SLICEL)   |       Async | Async      |         0.0 |
+| DP/dbus<6>LogicTrst1             |       0.00 | F (SLICEL)   |       Async | Async      |         0.0 |
+| DP/dbus<7>LogicTrst1             |       0.00 | F (SLICEL)   |       Async | Async      |         0.0 |
+| DP/dbus_on_data_inv1             |       0.00 | F (SLICEL)   |       Async | Async      |         0.0 |
+| adr_bus<0>_MLTSRCEDGELogicTrst1  |       0.00 | G (SLICEL)   |       Async | Async      |         0.0 |
+| adr_bus<0>_MLTSRCEDGELogicTrst11 |       0.00 | G (SLICEL)   |       Async | Async      |         0.0 |
+| adr_bus<1>_MLTSRCEDGELogicTrst1  |       0.00 | F (SLICEL)   |       Async | Async      |         0.0 |
+| adr_bus<2>_MLTSRCEDGELogicTrst1  |       0.00 | F (SLICEL)   |       Async | Async      |         0.0 |
+| adr_bus<3>_MLTSRCEDGELogicTrst1  |       0.00 | G (SLICEL)   |       Async | Async      |         0.0 |
+| adr_bus<4>_MLTSRCEDGELogicTrst1  |       0.00 | G (SLICEL)   |       Async | Async      |         0.0 |
+| adr_bus<5>_MLTSRCEDGELogicTrst1  |       0.00 | F (SLICEL)   |       Async | Async      |         0.0 |
+|                                  |            |              |             |            |             |
+| Total                            |       0.00 |              |             |            |             |
+---------------------------------------------------------------------------------------------------------
+
+3.3.1.2.  Signals
+----------------------------------------------------------------------------------------------------------------------------------
+|          Signals          | Power (mW) | Signal Rate | % High | Fanout | Slice Fanout |   Clock   |         Logic Type         |
+----------------------------------------------------------------------------------------------------------------------------------
+| CU/present_state_FSM_FFd1 |       0.00 |        0.00 |    0.0 |      7 |            7 | clk_BUFGP | NA                         |
+| CU/present_state_FSM_FFd2 |       0.00 |        0.00 |    0.0 |      1 |            1 | clk_BUFGP | NA                         |
+| CU/present_state_FSM_FFd3 |       0.00 |        0.00 |    0.0 |     17 |           14 | clk_BUFGP | FFX (SLICEL), FFY (SLICEL) |
+| CU/present_state_FSM_FFd4 |       0.00 |        0.00 |    0.0 |      7 |            4 | clk_BUFGP | NA                         |
+| DP/AC/data_out<0>         |       0.00 |        0.00 |    0.0 |      1 |            1 | clk_BUFGP | NA                         |
+| DP/AC/data_out<1>         |       0.00 |        0.00 |    0.0 |      1 |            1 | clk_BUFGP | NA                         |
+| DP/AC/data_out<2>         |       0.00 |        0.00 |    0.0 |      1 |            1 | clk_BUFGP | NA                         |
+| DP/AC/data_out<3>         |       0.00 |        0.00 |    0.0 |      1 |            1 | clk_BUFGP | NA                         |
+| DP/AC/data_out<4>         |       0.00 |        0.00 |    0.0 |      1 |            1 | clk_BUFGP | NA                         |
+| DP/AC/data_out<5>         |       0.00 |        0.00 |    0.0 |      1 |            1 | clk_BUFGP | NA                         |
+| DP/AC/data_out<6>         |       0.00 |        0.00 |    0.0 |      1 |            1 | clk_BUFGP | NA                         |
+| DP/AC/data_out<7>         |       0.00 |        0.00 |    0.0 |      1 |            1 | clk_BUFGP | NA                         |
+| DP/IR/data_out<0>         |       0.00 |        0.00 |    0.0 |      2 |            2 | clk_BUFGP | NA                         |
+| DP/IR/data_out<1>         |       0.00 |        0.00 |    0.0 |      2 |            2 | clk_BUFGP | NA                         |
+| DP/IR/data_out<2>         |       0.00 |        0.00 |    0.0 |      2 |            2 | clk_BUFGP | NA                         |
+| DP/IR/data_out<3>         |       0.00 |        0.00 |    0.0 |      2 |            2 | clk_BUFGP | NA                         |
+| DP/IR/data_out<4>         |       0.00 |        0.00 |    0.0 |      2 |            2 | clk_BUFGP | NA                         |
+| DP/IR/data_out<5>         |       0.00 |        0.00 |    0.0 |      2 |            2 | clk_BUFGP | NA                         |
+| DP/IR/data_out<6>         |       0.00 |        0.00 |    0.0 |      4 |            4 | clk_BUFGP | NA                         |
+| DP/IR/data_out<7>         |       0.00 |        0.00 |    0.0 |      5 |            5 | clk_BUFGP | NA                         |
+| DP/PC/pc<0>               |       0.00 |        0.00 |    0.0 |      1 |            1 | clk_BUFGP | NA                         |
+| DP/PC/pc<1>               |       0.00 |        0.00 |    0.0 |      1 |            1 | clk_BUFGP | NA                         |
+| DP/PC/pc<2>               |       0.00 |        0.00 |    0.0 |      1 |            1 | clk_BUFGP | NA                         |
+| DP/PC/pc<3>               |       0.00 |        0.00 |    0.0 |      1 |            1 | clk_BUFGP | NA                         |
+| DP/PC/pc<4>               |       0.00 |        0.00 |    0.0 |      1 |            1 | clk_BUFGP | NA                         |
+| DP/PC/pc<5>               |       0.00 |        0.00 |    0.0 |      1 |            1 | clk_BUFGP | NA                         |
+| DP/dbus<0>                |       0.00 |        0.00 |  100.0 |      3 |            2 | Async     | NA                         |
+| DP/dbus<1>                |       0.00 |        0.00 |  100.0 |      3 |            2 | Async     | NA                         |
+| DP/dbus<2>                |       0.00 |        0.00 |  100.0 |      3 |            2 | Async     | NA                         |
+| DP/dbus<3>                |       0.00 |        0.00 |  100.0 |      3 |            2 | Async     | NA                         |
+| DP/dbus<4>                |       0.00 |        0.00 |  100.0 |      3 |            2 | Async     | NA                         |
+| DP/dbus<5>                |       0.00 |        0.00 |  100.0 |      3 |            2 | Async     | NA                         |
+| DP/dbus<6>                |       0.00 |        0.00 |  100.0 |      3 |            2 | Async     | NA                         |
+| DP/dbus<7>                |       0.00 |        0.00 |  100.0 |      3 |            2 | Async     | NA                         |
+| DP/dbus_on_data_inv       |       0.00 |        0.00 |  100.0 |      8 |            8 | Async     | NA                         |
+| N11                       |       0.00 |        0.00 |  100.0 |      6 |            6 | Async     | NA                         |
+| N2                        |       0.00 |        0.00 |  100.0 |      1 |            1 | Async     | NA                         |
+| N3                        |       0.00 |        0.00 |   50.0 |      1 |            1 | Async     | NA                         |
+| N4                        |       0.00 |        0.00 |  100.0 |      1 |            1 | Async     | NA                         |
+| N5                        |       0.00 |        0.00 |  100.0 |      1 |            1 | Async     | NA                         |
+| N6                        |       0.00 |        0.00 |  100.0 |      1 |            1 | Async     | NA                         |
+| N7                        |       0.00 |        0.00 |  100.0 |      1 |            1 | Async     | NA                         |
+| N8                        |       0.00 |        0.00 |  100.0 |      1 |            1 | Async     | NA                         |
+| N9                        |       0.00 |        0.00 |  100.0 |      1 |            1 | Async     | NA                         |
+| adr_bus<0>_MLTSRCEDGE     |       0.00 |        0.00 |  100.0 |      1 |            1 | Async     | NA                         |
+| adr_bus<1>_MLTSRCEDGE     |       0.00 |        0.00 |  100.0 |      1 |            1 | Async     | NA                         |
+| adr_bus<2>_MLTSRCEDGE     |       0.00 |        0.00 |  100.0 |      1 |            1 | Async     | NA                         |
+| adr_bus<3>_MLTSRCEDGE     |       0.00 |        0.00 |  100.0 |      1 |            1 | Async     | NA                         |
+| adr_bus<4>_MLTSRCEDGE     |       0.00 |        0.00 |  100.0 |      1 |            1 | Async     | NA                         |
+| adr_bus<5>_MLTSRCEDGE     |       0.00 |        0.00 |  100.0 |      1 |            1 | Async     | NA                         |
+| alu_on_dbus               |       0.00 |        0.00 |    0.0 |      8 |            8 | Async     | NA                         |
+| data_on_dbus              |       0.00 |        0.00 |    0.0 |      9 |            9 | Async     | NA                         |
+| dbus_on_data              |       0.00 |        0.00 |    0.0 |      1 |            1 | Async     | NA                         |
+| ir_on_adr                 |       0.00 |        0.00 |    0.0 |      6 |            6 | Async     | NA                         |
+| reset_IBUF                |       0.00 |        0.00 |    1.0 |      4 |            3 | Async     | NA                         |
+|                           |            |             |        |        |              |           |                            |
+| Total                     |       0.00 |             |        |        |              |           |                            |
+----------------------------------------------------------------------------------------------------------------------------------
+
+3.3.2.  IO
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|         IO         | Power (mW) |   I/O Standard   | Signal Rate | % High | Clock (MHz) | Clock Name | Input Pins | Output Pins | Bidir Pins | Output Enable (%) | Output Load (pF) | Data Rate | IO LOGIC SERDES | IO DELAY | IBUF LOW PWR | Vccint (mW) | Vccaux (mW) | Vcco On-Chip Termal (mW)  | Vcco Supply Current (mA) |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| adr_bus<0>         |       0.00 | LVCMOS25_12_SLOW |        0.00 |  100.0 |       Async | Async      |          0 |           1 |          0 |              1.00 |                5 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| adr_bus<1>         |       0.00 | LVCMOS25_12_SLOW |        0.00 |  100.0 |       Async | Async      |          0 |           1 |          0 |              1.00 |                5 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| adr_bus<2>         |       0.00 | LVCMOS25_12_SLOW |        0.00 |  100.0 |       Async | Async      |          0 |           1 |          0 |              1.00 |                5 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| adr_bus<3>         |       0.00 | LVCMOS25_12_SLOW |        0.00 |  100.0 |       Async | Async      |          0 |           1 |          0 |              1.00 |                5 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| adr_bus<4>         |       0.00 | LVCMOS25_12_SLOW |        0.00 |  100.0 |       Async | Async      |          0 |           1 |          0 |              1.00 |                5 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| adr_bus<5>         |       0.00 | LVCMOS25_12_SLOW |        0.00 |  100.0 |       Async | Async      |          0 |           1 |          0 |              1.00 |                5 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| clk                |       0.00 | LVCMOS25         |        0.00 |   50.0 |       Async | Async      |          1 |           0 |          0 |                NA |                0 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| data_bus<0>        |       0.00 | LVCMOS25_12_SLOW |        0.00 |  100.0 |       Async | Async      |          0 |           0 |          1 |              1.00 |                5 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| data_bus<1>        |       0.00 | LVCMOS25_12_SLOW |        0.00 |  100.0 |       Async | Async      |          0 |           0 |          1 |              1.00 |                5 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| data_bus<2>        |       0.00 | LVCMOS25_12_SLOW |        0.00 |  100.0 |       Async | Async      |          0 |           0 |          1 |              1.00 |                5 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| data_bus<3>        |       0.00 | LVCMOS25_12_SLOW |        0.00 |  100.0 |       Async | Async      |          0 |           0 |          1 |              1.00 |                5 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| data_bus<4>        |       0.00 | LVCMOS25_12_SLOW |        0.00 |  100.0 |       Async | Async      |          0 |           0 |          1 |              1.00 |                5 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| data_bus<5>        |       0.00 | LVCMOS25_12_SLOW |        0.00 |  100.0 |       Async | Async      |          0 |           0 |          1 |              1.00 |                5 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| data_bus<6>        |       0.00 | LVCMOS25_12_SLOW |        0.00 |   50.0 |       Async | Async      |          0 |           0 |          1 |              1.00 |                5 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| data_bus<7>        |       0.00 | LVCMOS25_12_SLOW |        0.00 |  100.0 |       Async | Async      |          0 |           0 |          1 |              1.00 |                5 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| rd_mem             |       0.00 | LVCMOS25_12_SLOW |        0.00 |    0.0 |       Async | Async      |          0 |           1 |          0 |                NA |                5 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| reset              |       0.00 | LVCMOS25         |        0.00 |    1.0 |       Async | Async      |          1 |           0 |          0 |                NA |                0 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| wr_mem             |       0.00 | LVCMOS25_12_SLOW |        0.00 |    0.0 |       Async | Async      |          0 |           1 |          0 |                NA |                5 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+|                    |            |                  |             |        |             |            |            |             |            |                   |                  |           |                 |          |              |             |             |                           |                          |
+| Internal VREFs (0) |       0.00 |                  |             |        |             |            |            |             |            |                   |                  |           |                 |          |              |             |             |                           |                          |
+|                    |            |                  |             |        |             |            |            |             |            |                   |                  |           |                 |          |              |             |             |                           |                          |
+| Total              |       0.00 |                  |             |        |             |            |            |             |            |                   |                  |           |                 |          |              |             |             |                           |                          |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+4.  Warnings
+--------------------------------------------------------------------------------
+WARNING:Power:1337 - Clock frequency for clock net "clk_BUFGP" is zero.
+WARNING:Power:1337 - Clock frequency for clock net "clk_BUFGP/IBUFG" is zero.
+WARNING:Power:1369 - Clock frequency for one or more clocks was not found through
+timing constraints (PCF file) or simulation data.  Without knowing the
+clock frequency of all clocks, dynamic power information for those clock
+domains will default to zero which may under-estimate the power for this
+design.  To avoid this warning, provide at least one of the following:
+  1. The proper timing constraints (PERIOD) for clocks (re-implement design
+     and load the newly generated PCF file into XPower Analyzer)
+  2. A post PAR simulation-generated VCD or SAIF file indicating clock
+     frequencies
+  3. The clock frequency for clocks in the "By Type -> Clocks" view in the
+     XPower Analyzer GUI and then applying "Update Power Analysis"
+--------------------------------------------------------------------------------
+
+Analysis completed: Fri Jan 05 09:53:53 2018
+----------------------------------------------------------------

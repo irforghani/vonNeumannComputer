@@ -1,0 +1,976 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: vonNeumannComputer.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "vonNeumannComputer.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "vonNeumannComputer"
+Output Format                      : NGC
+Target Device                      : xc3s50-4-pq208
+
+---- Source Options
+Top Module Name                    : vonNeumannComputer
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "E:/Academic/VHDL projects/basic_CPU/utilities1.vhd" in Library work.
+Architecture utilities1 of Entity utilities1 is up to date.
+Compiling vhdl file "E:/Academic/VHDL projects/basic_CPU/IR.vhd" in Library work.
+Architecture procedural of Entity ir is up to date.
+Compiling vhdl file "E:/Academic/VHDL projects/basic_CPU/PC.vhd" in Library work.
+Architecture procedural of Entity pc is up to date.
+Compiling vhdl file "E:/Academic/VHDL projects/basic_CPU/AC.vhd" in Library work.
+Architecture procedural of Entity ac is up to date.
+Compiling vhdl file "E:/Academic/VHDL projects/basic_CPU/ALU.vhd" in Library work.
+Architecture functional of Entity alu is up to date.
+Compiling vhdl file "E:/Academic/VHDL projects/basic_CPU/controller.vhd" in Library work.
+Architecture procedural of Entity controller is up to date.
+Compiling vhdl file "E:/Academic/VHDL projects/basic_CPU/datapath.vhd" in Library work.
+Architecture structural of Entity datapath is up to date.
+Compiling vhdl file "E:/Academic/VHDL projects/basic_CPU/addingCPU.vhd" in Library work.
+Architecture structural of Entity addingcpu is up to date.
+Compiling vhdl file "E:/Academic/VHDL projects/basic_CPU/Instruction_Memory.vhd" in Library work.
+Architecture behavioral of Entity instruction_memory is up to date.
+Compiling vhdl file "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.vhd" in Library work.
+Entity <vonneumanncomputer> compiled.
+Entity <vonneumanncomputer> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <vonNeumannComputer> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <addingCPU> in library <work> (architecture <Structural>).
+
+Analyzing hierarchy for entity <Instruction_Memory> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <controller> in library <work> (architecture <Procedural>).
+
+Analyzing hierarchy for entity <datapath> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <IR> in library <work> (architecture <Procedural>).
+
+Analyzing hierarchy for entity <PC> in library <work> (architecture <Procedural>).
+
+Analyzing hierarchy for entity <AC> in library <work> (architecture <Procedural>).
+
+Analyzing hierarchy for entity <ALU> in library <work> (architecture <Functional>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <vonNeumannComputer> in library <work> (Architecture <behavioral>).
+Entity <vonNeumannComputer> analyzed. Unit <vonNeumannComputer> generated.
+
+Analyzing Entity <addingCPU> in library <work> (Architecture <Structural>).
+Entity <addingCPU> analyzed. Unit <addingCPU> generated.
+
+Analyzing Entity <controller> in library <work> (Architecture <Procedural>).
+INFO:Xst:1561 - "E:/Academic/VHDL projects/basic_CPU/controller.vhd" line 80: Mux is complete : default of case is discarded
+WARNING:Xst:819 - "E:/Academic/VHDL projects/basic_CPU/controller.vhd" line 31: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <op_code>
+INFO:Xst:2679 - Register <ld_ac> in unit <controller> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <pass> in unit <controller> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <ld_pc> in unit <controller> has a constant value of 1 during circuit operation. The register is replaced by logic.
+Entity <controller> analyzed. Unit <controller> generated.
+
+Analyzing Entity <datapath> in library <work> (Architecture <structural>).
+Entity <datapath> analyzed. Unit <datapath> generated.
+
+Analyzing Entity <IR> in library <work> (Architecture <Procedural>).
+Entity <IR> analyzed. Unit <IR> generated.
+
+Analyzing Entity <PC> in library <work> (Architecture <Procedural>).
+Entity <PC> analyzed. Unit <PC> generated.
+
+Analyzing Entity <AC> in library <work> (Architecture <Procedural>).
+Entity <AC> analyzed. Unit <AC> generated.
+
+Analyzing Entity <ALU> in library <work> (Architecture <Functional>).
+Entity <ALU> analyzed. Unit <ALU> generated.
+
+Analyzing Entity <Instruction_Memory> in library <work> (Architecture <Behavioral>).
+INFO:Xst:1432 - Contents of array <mem> may be accessed with a negative index, causing simulation mismatch.
+INFO:Xst:1433 - Contents of array <mem> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1432 - Contents of array <mem> may be accessed with a negative index, causing simulation mismatch.
+INFO:Xst:1433 - Contents of array <mem> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1432 - Contents of array <mem> may be accessed with a negative index, causing simulation mismatch.
+INFO:Xst:1433 - Contents of array <mem> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1432 - Contents of array <mem> may be accessed with a negative index, causing simulation mismatch.
+INFO:Xst:1433 - Contents of array <mem> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1432 - Contents of array <mem> may be accessed with a negative index, causing simulation mismatch.
+INFO:Xst:1433 - Contents of array <mem> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1432 - Contents of array <mem> may be accessed with a negative index, causing simulation mismatch.
+INFO:Xst:1433 - Contents of array <mem> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+WARNING:Xst:819 - "E:/Academic/VHDL projects/basic_CPU/Instruction_Memory.vhd" line 25: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <address>
+Entity <Instruction_Memory> analyzed. Unit <Instruction_Memory> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Instruction_Memory>.
+    Related source file is "E:/Academic/VHDL projects/basic_CPU/Instruction_Memory.vhd".
+WARNING:Xst:647 - Input <rm> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <clk> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:737 - Found 8-bit latch for signal <dataout>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_0>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_2>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_3>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_4>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_5>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_6>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_7>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_8>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_9>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_10>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_11>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_12>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_13>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_14>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_15>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_16>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_17>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_18>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_19>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_20>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_21>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_22>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_23>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_24>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_25>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_26>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_27>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_28>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_29>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_30>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_31>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_32>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_33>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_34>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_35>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_36>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_37>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_38>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_39>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_40>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_41>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_42>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_43>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_44>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_45>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_46>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_47>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_48>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_49>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_50>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_51>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_52>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_53>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_54>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_55>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_56>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_57>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_58>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_59>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_60>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_61>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_62>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <mem_63>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 33-bit adder for signal <count$add0001> created at line 35.
+    Found 34-bit adder for signal <count$add0002> created at line 35.
+    Found 35-bit adder for signal <count$add0003> created at line 35.
+    Found 32-bit adder for signal <count$add0004> created at line 35.
+    Found 32-bit adder for signal <count$add0006> created at line 35.
+    Found 32-bit adder for signal <count$addsub0000> created at line 35.
+    Found 32-bit adder for signal <dataout$add0000> created at line 35.
+    Found 32-bit adder for signal <dataout$addsub0000> created at line 35.
+    Found 32-bit comparator equal for signal <dataout$cmp_eq0000> created at line 36.
+    Found 32-bit comparator equal for signal <dataout$cmp_eq0001> created at line 36.
+    Found 32-bit comparator equal for signal <dataout$cmp_eq0002> created at line 36.
+    Found 32-bit comparator equal for signal <dataout$cmp_eq0003> created at line 36.
+    Found 32-bit adder for signal <mux0000$add0000> created at line 35.
+    Found 32-bit adder for signal <mux0000$add0001> created at line 35.
+    Found 32-bit adder for signal <mux0000$add0002> created at line 35.
+    Found 32-bit adder for signal <mux0000$addsub0000> created at line 35.
+    Found 32-bit adder for signal <mux0000$addsub0001> created at line 35.
+    Found 32-bit adder for signal <mux0000$addsub0002> created at line 35.
+    Found 32-bit comparator equal for signal <mux0000$cmp_eq0000> created at line 36.
+    Found 32-bit comparator equal for signal <mux0000$cmp_eq0001> created at line 36.
+    Found 32-bit comparator equal for signal <mux0000$cmp_eq0002> created at line 36.
+    Found 6-bit adder for signal <tmp1$addsub0000> created at line 28.
+    Found 6-bit adder for signal <tmp1$addsub0001> created at line 28.
+    Found 6-bit adder for signal <tmp1$addsub0002> created at line 28.
+    Found 6-bit adder for signal <tmp1$addsub0003> created at line 28.
+    Found 6-bit adder for signal <tmp1$addsub0004> created at line 28.
+    Summary:
+	inferred  19 Adder/Subtractor(s).
+	inferred   7 Comparator(s).
+Unit <Instruction_Memory> synthesized.
+
+
+Synthesizing Unit <controller>.
+    Related source file is "E:/Academic/VHDL projects/basic_CPU/controller.vhd".
+    Found finite state machine <FSM_0> for signal <present_state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 4                                              |
+    | Inputs             | 0                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | rst                       (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | reset                                          |
+    | Power Up State     | reset                                          |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <controller> synthesized.
+
+
+Synthesizing Unit <IR>.
+    Related source file is "E:/Academic/VHDL projects/basic_CPU/IR.vhd".
+    Found 8-bit register for signal <data_out>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <IR> synthesized.
+
+
+Synthesizing Unit <PC>.
+    Related source file is "E:/Academic/VHDL projects/basic_CPU/PC.vhd".
+    Found 6-bit register for signal <pc>.
+    Found 6-bit adder for signal <tmp$addsub0000> created at line 28.
+    Found 6-bit adder for signal <tmp$addsub0001> created at line 28.
+    Found 6-bit adder for signal <tmp$addsub0002> created at line 28.
+    Found 6-bit adder for signal <tmp$addsub0003> created at line 28.
+    Found 6-bit adder for signal <tmp$addsub0004> created at line 28.
+    Found 32-bit adder for signal <tmpi$add0001>.
+    Found 32-bit adder for signal <tmpi$add0002>.
+    Found 32-bit adder for signal <tmpi$add0003>.
+    Found 32-bit adder for signal <tmpi$add0004>.
+    Found 32-bit adder for signal <tmpi$add0005>.
+    Found 32-bit adder for signal <tmpi$addsub0000>.
+    Found 32-bit adder for signal <tmpi$addsub0001>.
+    Found 32-bit adder for signal <tmpi$addsub0002>.
+    Found 32-bit adder for signal <tmpi$addsub0003>.
+    Found 32-bit adder for signal <tmpi$addsub0004>.
+    Found 6-bit adder carry out for signal <tmpi$addsub0005> created at line 24.
+    Summary:
+	inferred   6 D-type flip-flop(s).
+	inferred  16 Adder/Subtractor(s).
+Unit <PC> synthesized.
+
+
+Synthesizing Unit <AC>.
+    Related source file is "E:/Academic/VHDL projects/basic_CPU/AC.vhd".
+    Found 8-bit register for signal <data_out>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <AC> synthesized.
+
+
+Synthesizing Unit <ALU>.
+    Related source file is "E:/Academic/VHDL projects/basic_CPU/ALU.vhd".
+    Found 8-bit adder for signal <tmp$addsub0000> created at line 28.
+    Found 8-bit adder for signal <tmp$addsub0001> created at line 28.
+    Found 8-bit adder for signal <tmp$addsub0002> created at line 28.
+    Found 8-bit adder for signal <tmp$addsub0003> created at line 28.
+    Found 8-bit adder for signal <tmp$addsub0004> created at line 28.
+    Found 8-bit adder for signal <tmp$addsub0005> created at line 28.
+    Found 8-bit adder for signal <tmp$addsub0006> created at line 28.
+    Found 8-bit adder for signal <tmp0$addsub0000> created at line 28.
+    Found 8-bit adder for signal <tmp0$addsub0001> created at line 28.
+    Found 8-bit adder for signal <tmp0$addsub0002> created at line 28.
+    Found 8-bit adder for signal <tmp0$addsub0003> created at line 28.
+    Found 8-bit adder for signal <tmp0$addsub0004> created at line 28.
+    Found 8-bit adder for signal <tmp0$addsub0005> created at line 28.
+    Found 8-bit adder for signal <tmp0$addsub0006> created at line 28.
+    Found 32-bit adder for signal <tmpi$add0001>.
+    Found 32-bit adder for signal <tmpi$add0002>.
+    Found 32-bit adder for signal <tmpi$add0003>.
+    Found 32-bit adder for signal <tmpi$add0004>.
+    Found 32-bit adder for signal <tmpi$add0005>.
+    Found 32-bit adder for signal <tmpi$add0006>.
+    Found 32-bit adder for signal <tmpi$add0007>.
+    Found 32-bit adder for signal <tmpi$addsub0000>.
+    Found 32-bit adder for signal <tmpi$addsub0001>.
+    Found 32-bit adder for signal <tmpi$addsub0002>.
+    Found 32-bit adder for signal <tmpi$addsub0003>.
+    Found 32-bit adder for signal <tmpi$addsub0004>.
+    Found 32-bit adder for signal <tmpi$addsub0005>.
+    Found 32-bit adder for signal <tmpi$addsub0006>.
+    Found 8-bit adder carry out for signal <tmpi$addsub0007> created at line 19.
+    Summary:
+	inferred  29 Adder/Subtractor(s).
+Unit <ALU> synthesized.
+
+
+Synthesizing Unit <datapath>.
+    Related source file is "E:/Academic/VHDL projects/basic_CPU/datapath.vhd".
+    Found 8-bit tristate buffer for signal <data_bus>.
+    Found 6-bit tristate buffer for signal <adr_bus>.
+    Found 8-bit tristate buffer for signal <dbus>.
+    Summary:
+	inferred  36 Tristate(s).
+Unit <datapath> synthesized.
+
+
+Synthesizing Unit <addingCPU>.
+    Related source file is "E:/Academic/VHDL projects/basic_CPU/addingCPU.vhd".
+Unit <addingCPU> synthesized.
+
+
+Synthesizing Unit <vonNeumannComputer>.
+    Related source file is "E:/Academic/VHDL projects/basic_CPU/vonNeumannComputer.vhd".
+WARNING:Xst:1780 - Signal <wm2> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <wm> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <rm2> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:646 - Signal <rm> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <data2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <address2> is used but never assigned. This sourceless signal will be automatically connected to value 000000.
+WARNING:Xst:646 - Signal <address> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <vonNeumannComputer> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 64
+ 32-bit adder                                          : 35
+ 33-bit adder                                          : 1
+ 34-bit adder                                          : 1
+ 35-bit adder                                          : 1
+ 6-bit adder                                           : 10
+ 6-bit adder carry out                                 : 1
+ 8-bit adder                                           : 14
+ 8-bit adder carry out                                 : 1
+# Registers                                            : 3
+ 6-bit register                                        : 1
+ 8-bit register                                        : 2
+# Latches                                              : 65
+ 8-bit latch                                           : 65
+# Comparators                                          : 7
+ 32-bit comparator equal                               : 7
+# Tristates                                            : 5
+ 6-bit tristate buffer                                 : 2
+ 8-bit tristate buffer                                 : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <CPU/C0/present_state/FSM> on signal <present_state[1:4]> with one-hot encoding.
+---------------------
+ State   | Encoding
+---------------------
+ reset   | 0001
+ fetch   | 0010
+ decode  | 0100
+ execute | 1000
+---------------------
+WARNING:Xst:1290 - Hierarchical block <CPU> is unconnected in block <vonNeumannComputer>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <RAM> is unconnected in block <vonNeumannComputer>.
+   It will be removed from the design.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Adders/Subtractors                                   : 40
+ 32-bit adder                                          : 14
+ 6-bit adder                                           : 10
+ 6-bit adder carry out                                 : 1
+ 8-bit adder                                           : 14
+ 8-bit adder carry out                                 : 1
+# Registers                                            : 22
+ Flip-Flops                                            : 22
+# Latches                                              : 65
+ 8-bit latch                                           : 65
+# Comparators                                          : 7
+ 32-bit comparator equal                               : 7
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_571> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_562> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_553> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_544> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_535> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_526> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_517> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_508> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_499> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_490> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_481> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_472> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_463> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_454> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_445> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_436> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_427> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_418> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_409> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_400> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_391> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_382> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_373> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_364> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_355> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_346> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_337> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_328> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_319> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_310> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_301> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_292> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_283> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_274> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_265> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_256> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_247> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_238> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_229> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_220> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_211> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_202> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_193> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_184> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_175> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_166> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_157> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_148> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_139> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_130> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_121> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_112> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_103> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_94> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_85> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_76> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_67> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_58> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_49> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_40> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_31> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_22> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_13> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_4> is equivalent to the following 6 FFs/Latches, which will be removed : <6> <5> <4> <3> <1> <0> 
+INFO:Xst:2261 - The FF/Latch <7> in Unit <LPM_LATCH_1> is equivalent to the following 3 FFs/Latches, which will be removed : <6> <5> <4> 
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_571.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_571>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_562.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_562>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_553.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_553>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_544.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_544>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_535.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_535>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_526.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_526>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_517.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_517>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_508.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_508>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_499.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_499>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_490.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_490>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_481.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_481>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_472.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_472>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_463.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_463>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_454.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_454>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_445.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_445>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_436.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_436>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_427.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_427>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_418.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_418>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_409.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_409>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_400.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_400>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_391.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_391>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_382.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_382>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_373.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_373>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_364.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_364>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_355.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_355>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_346.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_346>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_337.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_337>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_328.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_328>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_319.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_319>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_310.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_310>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_301.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_301>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_292.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_292>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_283.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_283>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_274.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_274>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_265.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_265>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_256.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_256>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_247.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_247>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_238.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_238>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_229.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_229>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_220.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_220>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_211.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_211>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_202.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_202>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_193.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_193>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_184.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_184>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_175.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_175>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_166.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_166>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_157.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_157>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_148.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_148>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_139.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_139>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_130.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_130>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_121.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_121>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_112.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_112>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_103.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_103>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_94.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_94>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_85.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_85>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_76.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_76>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_67.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_67>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_58.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_58>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_49.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_49>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_40.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_40>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_31.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_31>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_22.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_22>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_13.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_13>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch 2 hinder the constant cleaning in the block LPM_LATCH_4.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <7> (without init value) has a constant value of 0 in block <LPM_LATCH_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <mem_63_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_62_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_61_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_60_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_59_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_58_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_57_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_56_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_55_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_54_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_53_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_52_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_51_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_50_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_49_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_48_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_47_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_46_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_45_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_44_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_43_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_42_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_41_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_40_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_39_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_38_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_37_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_36_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_35_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_34_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_33_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_32_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_31_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_30_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_29_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_28_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_27_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_26_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_25_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_24_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_23_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_22_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_21_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_20_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_19_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_18_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_17_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_16_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_15_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_14_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_13_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_12_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_11_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_10_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_9_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_8_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_7_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_6_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_5_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_4_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_3_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_2_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_1_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2677 - Node <mem_0_2> of sequential type is unconnected in block <Instruction_Memory>.
+WARNING:Xst:2170 - Unit Instruction_Memory : the following signal(s) form a combinatorial loop: count_add0003<0>, dataout_0__or0000, count_add0006<0>, Madd_count_add0006_lut<0>, Madd_count_add0001_Madd_lut<0>, Madd_count_add0002_Madd_lut<0>, dataout_cmp_eq0001, count_add0002<0>, count_add0001<0>, Madd_count_add0003_Madd_lut<0>.
+WARNING:Xst:2170 - Unit Instruction_Memory : the following signal(s) form a combinatorial loop: count_add0003<1>, Madd_count_add0004_Madd_lut<1>, count_add0006<1>, mux0000_add0000<1>, mux0000_cmp_eq0000, count_add0001<1>, dataout_mux0005<7>, count_add0002<1>, count<1>, dataout_or0003.
+WARNING:Xst:2170 - Unit Instruction_Memory : the following signal(s) form a combinatorial loop: count<2>, count_add0003<2>, count_add0001<2>, count_add0006<2>, count_add0002<2>, dataout_cmp_eq0000.
+WARNING:Xst:2170 - Unit Instruction_Memory : the following signal(s) form a combinatorial loop: dataout_0__and0000, mux0000_add0001<3>, count_add0001<3>, dataout_or0000, mux0000_cmp_eq0001, count_add0003<3>, count_add0002<3>, count<3>, count_add0006<3>.
+WARNING:Xst:2170 - Unit Instruction_Memory : the following signal(s) form a combinatorial loop: count_add0003<4>, count_add0002<4>, count<4>, count_add0006<4>, mux0000_cmp_eq0002, mux0000_add0002<4>, dataout_1__or0000, dataout_mux0005<6>, count_add0001<4>.
+WARNING:Xst:2042 - Unit datapath: 8 internal tristates are replaced by logic (pull-up yes): data_bus<0>, data_bus<1>, data_bus<2>, data_bus<3>, data_bus<4>, data_bus<5>, data_bus<6>, data_bus<7>.
+WARNING:Xst:2040 - Unit datapath: 14 multi-source signals are replaced by logic (pull-up yes): adr_bus<0>, adr_bus<1>, adr_bus<2>, adr_bus<3>, adr_bus<4>, adr_bus<5>, dbus<0>, dbus<1>, dbus<2>, dbus<3>, dbus<4>, dbus<5>, dbus<6>, dbus<7>.
+
+Optimizing unit <vonNeumannComputer> ...
+
+Optimizing unit <controller> ...
+
+Optimizing unit <IR> ...
+
+Optimizing unit <PC> ...
+
+Optimizing unit <AC> ...
+
+Optimizing unit <ALU> ...
+
+Optimizing unit <Instruction_Memory> ...
+
+Optimizing unit <datapath> ...
+WARNING:Xst:2677 - Node <CPU/C0/present_state_FSM_FFd1> of sequential type is unconnected in block <vonNeumannComputer>.
+WARNING:Xst:2677 - Node <CPU/C0/present_state_FSM_FFd2> of sequential type is unconnected in block <vonNeumannComputer>.
+WARNING:Xst:2677 - Node <CPU/C0/present_state_FSM_FFd4> of sequential type is unconnected in block <vonNeumannComputer>.
+WARNING:Xst:2677 - Node <CPU/C0/present_state_FSM_FFd3> of sequential type is unconnected in block <vonNeumannComputer>.
+WARNING:Xst:2677 - Node <RAM/dataout_2> of sequential type is unconnected in block <vonNeumannComputer>.
+WARNING:Xst:2677 - Node <RAM/dataout_3> of sequential type is unconnected in block <vonNeumannComputer>.
+WARNING:Xst:2677 - Node <RAM/dataout_1> of sequential type is unconnected in block <vonNeumannComputer>.
+WARNING:Xst:2677 - Node <RAM/dataout_0> of sequential type is unconnected in block <vonNeumannComputer>.
+WARNING:Xst:2677 - Node <CPU/C1/AC/data_out_0> of sequential type is unconnected in block <vonNeumannComputer>.
+WARNING:Xst:2677 - Node <CPU/C1/AC/data_out_1> of sequential type is unconnected in block <vonNeumannComputer>.
+WARNING:Xst:2677 - Node <CPU/C1/AC/data_out_2> of sequential type is unconnected in block <vonNeumannComputer>.
+WARNING:Xst:2677 - Node <CPU/C1/AC/data_out_3> of sequential type is unconnected in block <vonNeumannComputer>.
+WARNING:Xst:2677 - Node <CPU/C1/AC/data_out_4> of sequential type is unconnected in block <vonNeumannComputer>.
+WARNING:Xst:2677 - Node <CPU/C1/AC/data_out_5> of sequential type is unconnected in block <vonNeumannComputer>.
+WARNING:Xst:2677 - Node <CPU/C1/AC/data_out_6> of sequential type is unconnected in block <vonNeumannComputer>.
+WARNING:Xst:2677 - Node <CPU/C1/AC/data_out_7> of sequential type is unconnected in block <vonNeumannComputer>.
+WARNING:Xst:2677 - Node <CPU/C1/PC/pc_0> of sequential type is unconnected in block <vonNeumannComputer>.
+WARNING:Xst:2677 - Node <CPU/C1/PC/pc_1> of sequential type is unconnected in block <vonNeumannComputer>.
+WARNING:Xst:2677 - Node <CPU/C1/PC/pc_2> of sequential type is unconnected in block <vonNeumannComputer>.
+WARNING:Xst:2677 - Node <CPU/C1/PC/pc_3> of sequential type is unconnected in block <vonNeumannComputer>.
+WARNING:Xst:2677 - Node <CPU/C1/PC/pc_4> of sequential type is unconnected in block <vonNeumannComputer>.
+WARNING:Xst:2677 - Node <CPU/C1/PC/pc_5> of sequential type is unconnected in block <vonNeumannComputer>.
+WARNING:Xst:2677 - Node <CPU/C1/IR/data_out_0> of sequential type is unconnected in block <vonNeumannComputer>.
+WARNING:Xst:2677 - Node <CPU/C1/IR/data_out_1> of sequential type is unconnected in block <vonNeumannComputer>.
+WARNING:Xst:2677 - Node <CPU/C1/IR/data_out_2> of sequential type is unconnected in block <vonNeumannComputer>.
+WARNING:Xst:2677 - Node <CPU/C1/IR/data_out_3> of sequential type is unconnected in block <vonNeumannComputer>.
+WARNING:Xst:2677 - Node <CPU/C1/IR/data_out_4> of sequential type is unconnected in block <vonNeumannComputer>.
+WARNING:Xst:2677 - Node <CPU/C1/IR/data_out_5> of sequential type is unconnected in block <vonNeumannComputer>.
+WARNING:Xst:2677 - Node <CPU/C1/IR/data_out_6> of sequential type is unconnected in block <vonNeumannComputer>.
+WARNING:Xst:2677 - Node <CPU/C1/IR/data_out_7> of sequential type is unconnected in block <vonNeumannComputer>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block vonNeumannComputer, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : vonNeumannComputer.ngr
+Top Level Output File Name         : vonNeumannComputer
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 2
+
+Cell Usage :
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s50pq208-4 
+
+ Number of Slices:                        0  out of    768     0%  
+ Number of IOs:                           2
+ Number of bonded IOBs:                   0  out of    124     0%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.99 secs
+ 
+--> 
+
+Total memory usage is 325532 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  308 (   0 filtered)
+Number of infos    :   81 (   0 filtered)
+

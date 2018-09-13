@@ -1,0 +1,8 @@
+vhdl isim_temp "utilities1.vhd"
+vhdl isim_temp "PC.vhd"
+vhdl isim_temp "IR.vhd"
+vhdl isim_temp "ALU.vhd"
+vhdl isim_temp "AC.vhd"
+vhdl isim_temp "datapath.vhd"
+vhdl isim_temp "controller.vhd"
+vhdl isim_temp "addingCPU.vhd"

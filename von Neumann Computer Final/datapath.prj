@@ -1,0 +1,6 @@
+vhdl work "utilities1.vhd"
+vhdl work "PC.vhd"
+vhdl work "IR.vhd"
+vhdl work "ALU.vhd"
+vhdl work "AC.vhd"
+vhdl work "datapath.vhd"

@@ -1,0 +1,124 @@
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/addingCPU.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/addingCPU.syr" 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/addingCPU.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/addingCPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 "addingCPU.ngc" addingCPU.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o addingCPU_map.ncd addingCPU.ngd addingCPU.pcf 
+par -w -intstyle ise -ol high -t 1 addingCPU_map.ncd addingCPU.ncd addingCPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml addingCPU.twx addingCPU.ncd -o addingCPU.twr addingCPU.pcf 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/addingCPU.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/addingCPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 "addingCPU.ngc" addingCPU.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o addingCPU_map.ncd addingCPU.ngd addingCPU.pcf 
+par -w -intstyle ise -ol high -t 1 addingCPU_map.ncd addingCPU.ncd addingCPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml addingCPU.twx addingCPU.ncd -o addingCPU.twr addingCPU.pcf 
+netgen -intstyle ise -ar Structure -tm addingCPU -w -dir netgen/synthesis -ofmt vhdl -sim addingCPU.ngc addingCPU_synthesis.vhd 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/addingCPU.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/addingCPU.syr" 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/addingCPU.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/addingCPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 "addingCPU.ngc" addingCPU.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o addingCPU_map.ncd addingCPU.ngd addingCPU.pcf 
+par -w -intstyle ise -ol high -t 1 addingCPU_map.ncd addingCPU.ncd addingCPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml addingCPU.twx addingCPU.ncd -o addingCPU.twr addingCPU.pcf 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/addingCPU.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/addingCPU.syr" 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/addingCPU.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/addingCPU.syr" 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/addingCPU.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/addingCPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 "addingCPU.ngc" addingCPU.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o addingCPU_map.ncd addingCPU.ngd addingCPU.pcf 
+par -w -intstyle ise -ol high -t 1 addingCPU_map.ncd addingCPU.ncd addingCPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml addingCPU.twx addingCPU.ncd -o addingCPU.twr addingCPU.pcf 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/addingCPU.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/addingCPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 "addingCPU.ngc" addingCPU.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o addingCPU_map.ncd addingCPU.ngd addingCPU.pcf 
+par -w -intstyle ise -ol high -t 1 addingCPU_map.ncd addingCPU.ncd addingCPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml addingCPU.twx addingCPU.ncd -o addingCPU.twr addingCPU.pcf 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/addingCPU.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/addingCPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 "addingCPU.ngc" addingCPU.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o addingCPU_map.ncd addingCPU.ngd addingCPU.pcf 
+par -w -intstyle ise -ol high -t 1 addingCPU_map.ncd addingCPU.ncd addingCPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml addingCPU.twx addingCPU.ncd -o addingCPU.twr addingCPU.pcf 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/addingCPU.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/addingCPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 "addingCPU.ngc" addingCPU.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o addingCPU_map.ncd addingCPU.ngd addingCPU.pcf 
+par -w -intstyle ise -ol high -t 1 addingCPU_map.ncd addingCPU.ncd addingCPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml addingCPU.twx addingCPU.ncd -o addingCPU.twr addingCPU.pcf 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/addingCPU.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/addingCPU.syr" 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/addingCPU.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/addingCPU.syr" 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/addingCPU.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/addingCPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 "addingCPU.ngc" addingCPU.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o addingCPU_map.ncd addingCPU.ngd addingCPU.pcf 
+par -w -intstyle ise -ol high -t 1 addingCPU_map.ncd addingCPU.ncd addingCPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml addingCPU.twx addingCPU.ncd -o addingCPU.twr addingCPU.pcf 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/addingCPU.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/addingCPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 "addingCPU.ngc" addingCPU.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o addingCPU_map.ncd addingCPU.ngd addingCPU.pcf 
+par -w -intstyle ise -ol high -t 1 addingCPU_map.ncd addingCPU.ncd addingCPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml addingCPU.twx addingCPU.ncd -o addingCPU.twr addingCPU.pcf 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/addingCPU.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/addingCPU.syr" 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/addingCPU.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/addingCPU.syr" 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/addingCPU.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/addingCPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 "addingCPU.ngc" addingCPU.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o addingCPU_map.ncd addingCPU.ngd addingCPU.pcf 
+par -w -intstyle ise -ol high -t 1 addingCPU_map.ncd addingCPU.ncd addingCPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml addingCPU.twx addingCPU.ncd -o addingCPU.twr addingCPU.pcf 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/addingCPU.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/addingCPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 "addingCPU.ngc" addingCPU.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o addingCPU_map.ncd addingCPU.ngd addingCPU.pcf 
+par -w -intstyle ise -ol high -t 1 addingCPU_map.ncd addingCPU.ncd addingCPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml addingCPU.twx addingCPU.ncd -o addingCPU.twr addingCPU.pcf 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/addingCPU.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/addingCPU.syr" 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/addingCPU.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/addingCPU.syr" 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/addingCPU.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/addingCPU.syr" 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/addingCPU.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/addingCPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 "addingCPU.ngc" addingCPU.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o addingCPU_map.ncd addingCPU.ngd addingCPU.pcf 
+par -w -intstyle ise -ol high -t 1 addingCPU_map.ncd addingCPU.ncd addingCPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml addingCPU.twx addingCPU.ncd -o addingCPU.twr addingCPU.pcf 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/addingCPU.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/addingCPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 "addingCPU.ngc" addingCPU.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o addingCPU_map.ncd addingCPU.ngd addingCPU.pcf 
+par -w -intstyle ise -ol high -t 1 addingCPU_map.ncd addingCPU.ncd addingCPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml addingCPU.twx addingCPU.ncd -o addingCPU.twr addingCPU.pcf 
+netgen -intstyle ise -ar Structure -tm addingCPU -w -dir netgen/synthesis -ofmt vhdl -sim addingCPU.ngc addingCPU_synthesis.vhd 
+bitgen -intstyle ise -f addingCPU.ut addingCPU.ncd 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/addingCPU.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/addingCPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 "addingCPU.ngc" addingCPU.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o addingCPU_map.ncd addingCPU.ngd addingCPU.pcf 
+par -w -intstyle ise -ol high -t 1 addingCPU_map.ncd addingCPU.ncd addingCPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml addingCPU.twx addingCPU.ncd -o addingCPU.twr addingCPU.pcf 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/addingCPU.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/addingCPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 "addingCPU.ngc" addingCPU.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o addingCPU_map.ncd addingCPU.ngd addingCPU.pcf 
+par -w -intstyle ise -ol high -t 1 addingCPU_map.ncd addingCPU.ncd addingCPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml addingCPU.twx addingCPU.ncd -o addingCPU.twr addingCPU.pcf 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/addingCPU.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/addingCPU.syr" 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/addingCPU.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/addingCPU.syr" 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/addingCPU.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/addingCPU.syr" 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/addingCPU.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/addingCPU.syr" 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/addingCPU.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/addingCPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 "addingCPU.ngc" addingCPU.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o addingCPU_map.ncd addingCPU.ngd addingCPU.pcf 
+par -w -intstyle ise -ol high -t 1 addingCPU_map.ncd addingCPU.ncd addingCPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml addingCPU.twx addingCPU.ncd -o addingCPU.twr addingCPU.pcf 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/addingCPU.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/addingCPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 "addingCPU.ngc" addingCPU.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o addingCPU_map.ncd addingCPU.ngd addingCPU.pcf 
+par -w -intstyle ise -ol high -t 1 addingCPU_map.ncd addingCPU.ncd addingCPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml addingCPU.twx addingCPU.ncd -o addingCPU.twr addingCPU.pcf 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/addingCPU.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/addingCPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 "addingCPU.ngc" addingCPU.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o addingCPU_map.ncd addingCPU.ngd addingCPU.pcf 
+par -w -intstyle ise -ol high -t 1 addingCPU_map.ncd addingCPU.ncd addingCPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml addingCPU.twx addingCPU.ncd -o addingCPU.twr addingCPU.pcf 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/addingCPU.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/addingCPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 "addingCPU.ngc" addingCPU.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o addingCPU_map.ncd addingCPU.ngd addingCPU.pcf 
+par -w -intstyle ise -ol high -t 1 addingCPU_map.ncd addingCPU.ncd addingCPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml addingCPU.twx addingCPU.ncd -o addingCPU.twr addingCPU.pcf 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/addingCPU.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/addingCPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-4 "addingCPU.ngc" addingCPU.ngd  
+map -intstyle ise -p xc3s50-pq208-4 -cm area -ir off -pr off -c 100 -o addingCPU_map.ncd addingCPU.ngd addingCPU.pcf 
+par -w -intstyle ise -ol high -t 1 addingCPU_map.ncd addingCPU.ncd addingCPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml addingCPU.twx addingCPU.ncd -o addingCPU.twr addingCPU.pcf 
+xst -intstyle ise -ifn "E:/Academic/VHDL projects/basic_CPU/addingCPU.xst" -ofn "E:/Academic/VHDL projects/basic_CPU/addingCPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-pq208-5 "addingCPU.ngc" addingCPU.ngd  
+map -intstyle ise -p xc3s50-pq208-5 -cm area -ir off -pr off -c 100 -o addingCPU_map.ncd addingCPU.ngd addingCPU.pcf 
+par -w -intstyle ise -ol high -t 1 addingCPU_map.ncd addingCPU.ncd addingCPU.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml addingCPU.twx addingCPU.ncd -o addingCPU.twr addingCPU.pcf 
+bitgen -intstyle ise -f addingCPU.ut addingCPU.ncd 

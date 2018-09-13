@@ -1,0 +1,198 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5
+-n 3 -fastpaths -xml Instruction_Memory.twx Instruction_Memory.ncd -o
+Instruction_Memory.twr Instruction_Memory.pcf
+
+Design file:              Instruction_Memory.ncd
+Physical constraint file: Instruction_Memory.pcf
+Device,package,speed:     xc3s50,pq208,-5 (PRODUCTION 1.39 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock address<0> to Pad
+------------+------------+--------------------------------+--------+
+            | clk (edge) |                                | Clock  |
+Destination |   to PAD   |Internal Clock(s)               | Phase  |
+------------+------------+--------------------------------+--------+
+dataout<0>  |    8.759(F)|Mcompar_dataout_cmp_eq0000_cy<9>|   0.000|
+dataout<1>  |    8.767(F)|Mcompar_dataout_cmp_eq0000_cy<9>|   0.000|
+dataout<2>  |    8.759(F)|Mcompar_dataout_cmp_eq0000_cy<9>|   0.000|
+dataout<3>  |    8.767(F)|Mcompar_dataout_cmp_eq0000_cy<9>|   0.000|
+------------+------------+--------------------------------+--------+
+
+Clock address<1> to Pad
+------------+------------+--------------------------------+--------+
+            | clk (edge) |                                | Clock  |
+Destination |   to PAD   |Internal Clock(s)               | Phase  |
+------------+------------+--------------------------------+--------+
+dataout<0>  |    8.672(F)|Mcompar_dataout_cmp_eq0000_cy<9>|   0.000|
+dataout<1>  |    8.680(F)|Mcompar_dataout_cmp_eq0000_cy<9>|   0.000|
+dataout<2>  |    8.672(F)|Mcompar_dataout_cmp_eq0000_cy<9>|   0.000|
+dataout<3>  |    8.680(F)|Mcompar_dataout_cmp_eq0000_cy<9>|   0.000|
+------------+------------+--------------------------------+--------+
+
+Clock address<2> to Pad
+------------+------------+--------------------------------+--------+
+            | clk (edge) |                                | Clock  |
+Destination |   to PAD   |Internal Clock(s)               | Phase  |
+------------+------------+--------------------------------+--------+
+dataout<0>  |    8.839(F)|Mcompar_dataout_cmp_eq0000_cy<9>|   0.000|
+dataout<1>  |    8.847(F)|Mcompar_dataout_cmp_eq0000_cy<9>|   0.000|
+dataout<2>  |    8.839(F)|Mcompar_dataout_cmp_eq0000_cy<9>|   0.000|
+dataout<3>  |    8.847(F)|Mcompar_dataout_cmp_eq0000_cy<9>|   0.000|
+------------+------------+--------------------------------+--------+
+
+Clock address<3> to Pad
+------------+------------+--------------------------------+--------+
+            | clk (edge) |                                | Clock  |
+Destination |   to PAD   |Internal Clock(s)               | Phase  |
+------------+------------+--------------------------------+--------+
+dataout<0>  |    8.645(F)|Mcompar_dataout_cmp_eq0000_cy<9>|   0.000|
+dataout<1>  |    8.653(F)|Mcompar_dataout_cmp_eq0000_cy<9>|   0.000|
+dataout<2>  |    8.645(F)|Mcompar_dataout_cmp_eq0000_cy<9>|   0.000|
+dataout<3>  |    8.653(F)|Mcompar_dataout_cmp_eq0000_cy<9>|   0.000|
+------------+------------+--------------------------------+--------+
+
+Clock address<4> to Pad
+------------+------------+--------------------------------+--------+
+            | clk (edge) |                                | Clock  |
+Destination |   to PAD   |Internal Clock(s)               | Phase  |
+------------+------------+--------------------------------+--------+
+dataout<0>  |    8.571(F)|Mcompar_dataout_cmp_eq0000_cy<9>|   0.000|
+dataout<1>  |    8.579(F)|Mcompar_dataout_cmp_eq0000_cy<9>|   0.000|
+dataout<2>  |    8.571(F)|Mcompar_dataout_cmp_eq0000_cy<9>|   0.000|
+dataout<3>  |    8.579(F)|Mcompar_dataout_cmp_eq0000_cy<9>|   0.000|
+------------+------------+--------------------------------+--------+
+
+Clock address<5> to Pad
+------------+------------+--------------------------------+--------+
+            | clk (edge) |                                | Clock  |
+Destination |   to PAD   |Internal Clock(s)               | Phase  |
+------------+------------+--------------------------------+--------+
+dataout<0>  |    8.831(F)|Mcompar_dataout_cmp_eq0000_cy<9>|   0.000|
+dataout<1>  |    8.839(F)|Mcompar_dataout_cmp_eq0000_cy<9>|   0.000|
+dataout<2>  |    8.831(F)|Mcompar_dataout_cmp_eq0000_cy<9>|   0.000|
+dataout<3>  |    8.839(F)|Mcompar_dataout_cmp_eq0000_cy<9>|   0.000|
+------------+------------+--------------------------------+--------+
+
+Clock to Setup on destination clock address<0>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+address<0>     |         |         |    3.445|    3.445|
+address<1>     |         |         |    3.108|    3.108|
+address<2>     |         |         |    3.773|    3.773|
+address<3>     |         |         |    3.774|    3.774|
+address<4>     |         |         |    3.363|    3.363|
+address<5>     |         |         |    4.277|    4.277|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock address<1>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+address<0>     |         |         |    3.515|    3.515|
+address<1>     |         |         |    3.178|    3.178|
+address<2>     |         |         |    3.843|    3.843|
+address<3>     |         |         |    3.844|    3.844|
+address<4>     |         |         |    3.433|    3.433|
+address<5>     |         |         |    4.347|    4.347|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock address<2>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+address<0>     |         |         |    3.381|    3.381|
+address<1>     |         |         |    3.044|    3.044|
+address<2>     |         |         |    3.709|    3.709|
+address<3>     |         |         |    3.710|    3.710|
+address<4>     |         |         |    3.299|    3.299|
+address<5>     |         |         |    4.213|    4.213|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock address<3>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+address<0>     |         |         |    3.536|    3.536|
+address<1>     |         |         |    3.199|    3.199|
+address<2>     |         |         |    3.864|    3.864|
+address<3>     |         |         |    3.865|    3.865|
+address<4>     |         |         |    3.454|    3.454|
+address<5>     |         |         |    4.368|    4.368|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock address<4>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+address<0>     |         |         |    3.596|    3.596|
+address<1>     |         |         |    3.259|    3.259|
+address<2>     |         |         |    3.924|    3.924|
+address<3>     |         |         |    3.925|    3.925|
+address<4>     |         |         |    3.514|    3.514|
+address<5>     |         |         |    4.428|    4.428|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock address<5>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+address<0>     |         |         |    3.387|    3.387|
+address<1>     |         |         |    3.050|    3.050|
+address<2>     |         |         |    3.715|    3.715|
+address<3>     |         |         |    3.716|    3.716|
+address<4>     |         |         |    3.305|    3.305|
+address<5>     |         |         |    4.219|    4.219|
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Wed Jan 24 14:41:13 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 154 MB
+
+
+
